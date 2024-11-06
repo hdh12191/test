@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 폼 요소 이해하기</title>
+  </head>
+  <body>
+    <header><h1>HTML 폼 요소 이해하기</h1></header>
+    <div>
+      <form action="form.html">
+        <div>
+          <label for="write">아무거나 적어주세요 : </label>
+          <br />
+          <input type="text" id="write" name="write" />
+        </div>
+        <br />
+        <div>
+          <label for="check">아무거나 체크해보세요</label>
+          <div>
+            <input type="checkbox" id="check" name="check1" value="check1" />
+            <label for="check">check1</label>
+          </div>
+          <div>
+            <input type="checkbox" id="check" name="check2" value="check2" />
+            <label for="check">check2</label>
+          </div>
+        </div>
+        <br />
+        <div>
+          <label for="friut">가장 좋아하는 과일은?</label>
+          <br />
+          <br />
+          <div>
+            <input type="radio" id="banana" name="friut" value="banana" />
+            <label for="banana">banana</label>
+          </div>
+          <br />
+          <div>
+            <input type="radio" id="apple" name="friut" value="apple" />
+            <label for="apple">apple</label>
+          </div>
+        </div>
+        <br />
+        <div>
+          <label for="can-thirty-write">30자까지 입력가능합니다 : </label>
+          <br />
+          <textarea
+            name="thirty"
+            id="can-thirty-write"
+            maxlength="30"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="select-anything">아무거나 선택해보세요 : </label
+          ><select name="select" id="select-anything">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="2">4</option>
+            <option value="2">5</option>
+          </select>
+        </div>
+        <br />
+        <div><button type="submit">눌러도 아무일도 안일어나지롱</button></div>
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
